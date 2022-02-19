@@ -11,7 +11,7 @@ package com.blz.addressbook;
 
 		public static void main(String args[]) {
 			
-			Contact person1 = new Contact("Raj","Kumar","Nagar","MH",35,8620,"raj@gmail.com");
+			Contact person1 = new Contact("Priya","Kumar","Nagar","MH",35,8620,"raj@gmail.com");
 			Contact person2 = new Contact("Shashi","Rao","Chowk","TD",98,9736,"shashi@yahoo.com");
 			Contact person3 = new Contact("Apurva","Mehta","Mahal","AP",47,7620,"amar@edu.com");
 		    personDetails[0]=person1;
