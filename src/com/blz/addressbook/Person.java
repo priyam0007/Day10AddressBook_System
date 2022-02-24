@@ -24,7 +24,7 @@ package com.blz.addressbook;
 		 public static void operations() {
 		    System.out.println("Enter your choice");
 		    System.out.println("1)Add contact");
-		    System.out.println("2)Add contact");
+		    System.out.println("2)Edit contact");
 		    int choice = sc.nextInt();
 		    switch(choice) {
 		    	case 1:
