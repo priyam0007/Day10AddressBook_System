@@ -1,19 +1,18 @@
 package com.blz.addressbook;
  import java.util.Scanner;
   public class Person {
-	    static Scanner sc = new Scanner(System.in);
+	        static Scanner sc = new Scanner(System.in);
 		static String firstName,lastName,address,state,email;
 		static int zip;
 		static long phoneNumber;
 		static int counterForAdd=3;
 		static int counter;
-	    static Contact [] personDetails = new Contact[10];
+	        static Contact [] personDetails = new Contact[10];
 
 		public static void main(String args[]) {
-			
-			Contact person1 = new Contact("Priya","M","Bijapur","KA",35,8620,"priya@gmail.com");
-			Contact person2 = new Contact("Rishi","R","Chitrudurga","KA",98,9736,"rishi@yahoo.com");
-			Contact person3 = new Contact("Gwarav","G","Durga","KA",47,7620,"gwarav@edu.com");
+		    Contact person1 = new Contact("Priya","M","Bijapur","KA",35,8620,"priya@gmail.com");
+		    Contact person2 = new Contact("Rishi","R","Chitrudurga","KA",98,9736,"rishi@yahoo.com");
+		    Contact person3 = new Contact("Gwarav","G","Durga","KA",47,7620,"gwarav@edu.com");
 		    personDetails[0]=person1;
 		    personDetails[1]=person2;
 		    personDetails[2]=person3;
@@ -29,16 +28,16 @@ package com.blz.addressbook;
 		    }
 		    System.out.println();
 		    operations();
-		}
-		public static void operations() {
-			boolean label = true;
-			while(label) {
-			    System.out.println("Enter your choice");
-			    System.out.println("1)Add contact");
-			    System.out.println("2)Edit contact");
-			    System.out.println("3)Delete contact");
-			    int choice = sc.nextInt();
-			    switch(choice) {
+		  }
+		  public static void operations() {
+		    boolean label = true;
+		    while(label) {
+			System.out.println("Enter your choice");
+		        System.out.println("1)Add contact");
+	      	        System.out.println("2)Edit contact");
+		        System.out.println("3)Delete contact");
+	                int choice = sc.nextInt();
+		        switch(choice) {
 			    	case 1:
 			    		int numOfPerson=1;
 			    		System.out.println("Enter how many contacts do you want to add");
@@ -53,7 +52,7 @@ package com.blz.addressbook;
 			    		}
 			    		System.out.println("Newly updated contact list is");
 			    		for(int i = 0; i < counterForAdd;i++) {
-						   System.out.println(personDetails[i]);
+				             System.out.println(personDetails[i]);
 			    		}
 			    		break;
 			    	case 2:
@@ -62,14 +61,14 @@ package com.blz.addressbook;
 			    		String keyName = sc.next();
 			    		for( i = 0; i < counterForAdd; i++) {
 			    		if(keyName.equals(personDetails[i].firstName)) {
-			    				contactInfo();
-			    				Contact person5 = new Contact(firstName,lastName,address,state,zip,phoneNumber,email);
-			    		 		personDetails[i]= person5;
-			    			}
+			    		     contactInfo();
+			    	             Contact person5 = new Contact(firstName,lastName,address,state,zip,phoneNumber,email);
+			    		     personDetails[i]= person5;
+			    		   }
 			    		}
 			    		System.out.println("Newly edited contact list is");
 			    		for(i = 0; i < counterForAdd;i++) {
-			    			   System.out.println(personDetails[i]);
+			    		     System.out.println(personDetails[i]);
 			    		}
 			    		break;
 			    	case 3:
@@ -85,7 +84,7 @@ package com.blz.addressbook;
 			    		}
 			    		System.out.println("Newly edited contact list is");
 			    		for(i = 0; i < counterForAdd;i++) {
-			    			   System.out.println(personDetails[i]);
+			    		       System.out.println(personDetails[i]);
 			    		}
 			    		break;
 			    	default:
