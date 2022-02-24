@@ -1,7 +1,7 @@
 package com.blz.addressbook;
  import java.util.Scanner;
   public class Person {
-                   static Contact [] personDetails = new Contact[10];
+                  static Contact [] personDetails = new Contact[10];
 	              public static void main(String args[]) {
 			Contact person1 = new Contact("Priya","M","Bijapur","KA",35,8620,"raj@gmail.com");
 			Contact person2 = new Contact("Rishi","R","Chitrudurga","KA",98,9736,"shashi@yahoo.com");
